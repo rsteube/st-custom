@@ -1,6 +1,6 @@
 pkgname=st-custom
 _pkgname=st
-pkgver=0.8.1
+pkgver=0.8.1.r0.g6f0f2b7
 pkgrel=1
 epoch=1
 pkgdesc='Simple virtual terminal emulator for X'
@@ -23,11 +23,11 @@ source=("git://git.suckless.org/st#tag=0.8.1"
 
 md5sums=('SKIP'
          'SKIP'
-         'SKIP'
-         'SKIP'
-         'SKIP'
-         'SKIP'
-         'SKIP')
+         '6ba48661559ba8864a7a008cdb59eff7'
+         'bbe056eaed5914f55ccea001ca7f05e9'
+         '72227737f6cd831afd014a3613bd559d'
+         'fa0bf6c0dae5a69e3b1916ce093f6aff'
+         '7d23416418e9930e4cba177244c2c085')
 
 pkgver() {
 	cd "${_pkgname}"
