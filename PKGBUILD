@@ -8,7 +8,8 @@ url='https://st.suckless.org/'
 arch=('i686' 'x86_64')
 license=('MIT')
 options=('zipman')
-depends=('libxft' 'nerd-fonts-complete-mono-glyphs')
+#depends=('libxft' 'nerd-fonts-meslo')
+depends=('libxft')
 makedepends=('ncurses' 'libxext' 'git')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
@@ -26,7 +27,7 @@ md5sums=('SKIP'
          '6ba48661559ba8864a7a008cdb59eff7'
          'bbe056eaed5914f55ccea001ca7f05e9'
          '72227737f6cd831afd014a3613bd559d'
-         'fa0bf6c0dae5a69e3b1916ce093f6aff'
+         '53a430a1b2da077b170279d09abf1b72'
          '7d23416418e9930e4cba177244c2c085')
 
 pkgver() {
