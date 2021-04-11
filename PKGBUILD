@@ -1,7 +1,7 @@
 pkgname=st-custom
 _pkgname=st
 pkgver=0.8.1.r0.g6f0f2b7
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc='Simple virtual terminal emulator for X'
 url='https://st.suckless.org/'
@@ -20,7 +20,8 @@ source=("git://git.suckless.org/st#tag=0.8.1"
         "https://st.suckless.org/patches/scrollback/st-scrollback-0.8.diff"
         "https://st.suckless.org/patches/scrollback/st-scrollback-mouse-0.8.diff"
         "https://st.suckless.org/patches/scrollback/st-scrollback-mouse-altscreen-0.8.diff"
-        "https://st.suckless.org/patches/externalpipe/st-externalpipe-0.8.1.diff")
+        "https://st.suckless.org/patches/externalpipe/st-externalpipe-0.8.1.diff"
+        "https://st.suckless.org/patches/fix_keyboard_input/st-fix-keyboard-input-20180605-dc3b5ba.diff")
 
 md5sums=('SKIP'
          'SKIP'
@@ -28,7 +29,8 @@ md5sums=('SKIP'
          'bbe056eaed5914f55ccea001ca7f05e9'
          '72227737f6cd831afd014a3613bd559d'
          '53a430a1b2da077b170279d09abf1b72'
-         '7d23416418e9930e4cba177244c2c085')
+         '7d23416418e9930e4cba177244c2c085'
+         'b97e0610618e556ec3bcb11fcce7d039')
 
 pkgver() {
 	cd "${_pkgname}"

@@ -1,0 +1,35 @@
+pkgbase = st-custom
+	pkgdesc = Simple virtual terminal emulator for X
+	pkgver = 0.8.1.r0.g6f0f2b7
+	pkgrel = 2
+	epoch = 1
+	url = https://st.suckless.org/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = ncurses
+	makedepends = libxext
+	makedepends = git
+	depends = libxft
+	provides = st
+	conflicts = st
+	options = zipman
+	source = git://git.suckless.org/st#tag=0.8.1
+	source = config.h
+	source = https://st.suckless.org/patches/alpha/st-alpha-20180616-0.8.1.diff
+	source = https://st.suckless.org/patches/scrollback/st-scrollback-0.8.diff
+	source = https://st.suckless.org/patches/scrollback/st-scrollback-mouse-0.8.diff
+	source = https://st.suckless.org/patches/scrollback/st-scrollback-mouse-altscreen-0.8.diff
+	source = https://st.suckless.org/patches/externalpipe/st-externalpipe-0.8.1.diff
+	source = https://st.suckless.org/patches/fix_keyboard_input/st-fix-keyboard-input-20180605-dc3b5ba.diff
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = 6ba48661559ba8864a7a008cdb59eff7
+	md5sums = bbe056eaed5914f55ccea001ca7f05e9
+	md5sums = 72227737f6cd831afd014a3613bd559d
+	md5sums = 53a430a1b2da077b170279d09abf1b72
+	md5sums = 7d23416418e9930e4cba177244c2c085
+	md5sums = b97e0610618e556ec3bcb11fcce7d039
+
+pkgname = st-custom
+
