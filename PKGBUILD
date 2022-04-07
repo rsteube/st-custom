@@ -1,7 +1,7 @@
 pkgname=st-custom
 _pkgname=st
-pkgver=0.8.1.r0.g6f0f2b7
-pkgrel=2
+pkgver=0.8.5.r0.g7fb0c0c
+pkgrel=1
 epoch=1
 pkgdesc='Simple virtual terminal emulator for X'
 url='https://st.suckless.org/'
@@ -14,22 +14,22 @@ makedepends=('ncurses' 'libxext' 'git')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
 
-source=("git://git.suckless.org/st#tag=0.8.1"
+source=(
         "config.h"
-        "https://st.suckless.org/patches/alpha/st-alpha-20180616-0.8.1.diff"
-        "https://st.suckless.org/patches/scrollback/st-scrollback-0.8.diff"
-        "https://st.suckless.org/patches/scrollback/st-scrollback-mouse-0.8.diff"
-        "https://st.suckless.org/patches/scrollback/st-scrollback-mouse-altscreen-0.8.diff"
-        "https://st.suckless.org/patches/externalpipe/st-externalpipe-0.8.1.diff"
+        "git://git.suckless.org/st#tag=0.8.5"
+        "https://st.suckless.org/patches/alpha/st-alpha-20220206-0.8.5.diff"
+        "https://st.suckless.org/patches/scrollback/st-scrollback-0.8.5.diff"
+        "https://st.suckless.org/patches/scrollback/st-scrollback-mouse-20220127-2c5edf2.diff"
+        "https://st.suckless.org/patches/scrollback/st-scrollback-mouse-altscreen-20220127-2c5edf2.diff"
         "https://st.suckless.org/patches/fix_keyboard_input/st-fix-keyboard-input-20180605-dc3b5ba.diff")
+#"https://st.suckless.org/patches/externalpipe/st-externalpipe-0.8.1.diff"
 
-md5sums=('SKIP'
+md5sums=('afc3b50e71af29d6d1b3d5d031b91066'
          'SKIP'
-         '6ba48661559ba8864a7a008cdb59eff7'
-         'bbe056eaed5914f55ccea001ca7f05e9'
-         '72227737f6cd831afd014a3613bd559d'
-         '53a430a1b2da077b170279d09abf1b72'
-         '7d23416418e9930e4cba177244c2c085'
+         '2bd6801c2abd29c86e7b5908b043708d'
+         '2540178ff4c1ead78a7249d1d9939d52'
+         '988cbd4c8612dbe1b6f1845d06cfc6f0'
+         'd740e376ed70ed719f5d68e44755e861'
          'b97e0610618e556ec3bcb11fcce7d039')
 
 pkgver() {
