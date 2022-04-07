@@ -24,7 +24,7 @@ source=(
         "https://st.suckless.org/patches/fix_keyboard_input/st-fix-keyboard-input-20180605-dc3b5ba.diff")
 #"https://st.suckless.org/patches/externalpipe/st-externalpipe-0.8.1.diff"
 
-md5sums=('afc3b50e71af29d6d1b3d5d031b91066'
+md5sums=('689b9698af91baba1bd77272ca26004b'
          'SKIP'
          '2bd6801c2abd29c86e7b5908b043708d'
          '2540178ff4c1ead78a7249d1d9939d52'
