@@ -3,3 +3,4 @@ src
 st
 *.pkg.tar.xz
 *.diff
+!st-externalpipe-0.8.5-custom.diff
