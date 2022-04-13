@@ -22,16 +22,18 @@ source=(
         "https://st.suckless.org/patches/scrollback/st-scrollback-mouse-20220127-2c5edf2.diff"
         "https://st.suckless.org/patches/scrollback/st-scrollback-mouse-altscreen-20220127-2c5edf2.diff"
         "https://st.suckless.org/patches/fix_keyboard_input/st-fix-keyboard-input-20180605-dc3b5ba.diff"
-        "st-externalpipe-0.8.5-custom.diff")
+        "st-externalpipe-0.8.5-custom.diff"
+        "https://st.suckless.org/patches/externalpipe/st-externalpipe-eternal-0.8.3.diff")
 
-md5sums=('1a52aac56e07e6369a77e9d7d8d8e1ac'
+md5sums=('1cc3ad563dd65b1fd495ac7010b49285'
          'SKIP'
          '2bd6801c2abd29c86e7b5908b043708d'
          '2540178ff4c1ead78a7249d1d9939d52'
          '988cbd4c8612dbe1b6f1845d06cfc6f0'
          'd740e376ed70ed719f5d68e44755e861'
          'b97e0610618e556ec3bcb11fcce7d039'
-         '664c0017537fbd8c8295948c561c5e89')
+         '664c0017537fbd8c8295948c561c5e89'
+         '17df592890b398f6425e58eb4174b357')
 
 pkgver() {
 	cd "${_pkgname}"

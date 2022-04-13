@@ -192,6 +192,10 @@ static char *openurlcmd[] = { "/bin/sh", "-c",
     "xurls | sort | uniq | dmenu -l 10 | xargs -r xdg-open",
     "externalpipe", NULL };
 
+static char *editscreencmd[] = { "/bin/sh", "-c",
+    "tmpfile=$(mktemp /tmp/st-edit.XXXXXX); trap  'rm \"$tmpfile\"' 0 1 15; cat > \"$tmpfile\"; st -e \"$EDITOR\" \"$tmpfile\"",
+    "externalpipe", NULL };
+
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
@@ -207,6 +211,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+        { MODKEY,               'e',            externalpipe,   { .v = editscreencmd } },
         { MODKEY,               'u',            externalpipe,   { .v = openurlcmd } },
 };
 
